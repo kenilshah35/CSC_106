@@ -1,0 +1,6 @@
+('key:', 'yyj')
+('plain text:', 'kenil')
+('encrypted text:', 'icwgj')
+
+#Code Skulptor link : http://www.codeskulptor.org/#user44_AOH0LZmfl7_0.py
+

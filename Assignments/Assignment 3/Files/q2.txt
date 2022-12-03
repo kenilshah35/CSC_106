@@ -1,0 +1,3 @@
+select Ranking,SongTitle,OtherFeat,Video from BestSongsEver order by Ranking;
+select BestSongsEver.Ranking,BestSongsEver.SongTitle,BestSongsEver.Year,Artists.Name,Artists.NumberOfMembers,Artists.CurrentlyActive from BestSongsEver INNER JOIN Artists on BestSongsEver.Name=Artists.Name where Artists.CurrentlyActive = 1 order by BestSongsEver.Year;
+select DISTINCT(Languages.Language) from ((Artists INNER JOIN BestSongsEver on Artists.Name = BestSongsEver.Name) INNER JOIN Languages on BestSongsEver.Ranking=Languages.Ranking) where Artists.CurrentlyActive = 0 order by Languages.Language;
